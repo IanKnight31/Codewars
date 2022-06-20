@@ -21,20 +21,21 @@
 //Switch case 
 
 function howMuchILoveYou(nbPetals) {
-    switch(nbPetals){
-        case 1:
+    switch((nbPetals - 1) % 6){
+        case 0:
         return 'I love you'
-        case 2: 
+        case 1: 
         return 'a little'
-        case 3: 
+        case 2: 
         return 'a lot'
-        case 4: 
+        case 3: 
         return 'passionately'
-        case 5: 
+        case 4: 
         return 'madly'
-        case 6: 
+        case 5: 
         return 'not at all'
-        default: 
-        return 'I love you'
     }
 }
+
+//I built the switch case correctly, but I had to look at the solutions to know what to put into the switch parameter
+//I'm going to have to consule the discord to know why this works!
